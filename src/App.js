@@ -15,7 +15,7 @@ const App = () => {
 
   });  //criar um estado c as info do poke
   
-  const searchPokemon = () => { //API request aqui
+  const searchPokemon = () => { //API request aqui (com promise)
     Axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then(
     (response) => { 
       setPokemon({
@@ -35,8 +35,7 @@ const App = () => {
   return (
     <div className="App">
       <div className='TitleSection'>
-        <img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3F3NzVpZzB6bGY0ZGEyb28zMWY5c3BzeGowcnoyMHRvZW81cmF4ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iBANmdIlMNJVC/giphy.gif'/>
-
+        
 
         <h1>Pesquise seu pokemon aqui!</h1>
         <input 
@@ -49,7 +48,7 @@ const App = () => {
         <button onClick={searchPokemon}>Pesquisar pokemon</button>
       </div>
 
-      <div className='DisplaySection'> { !pokemon ? ( <h1>Por favor escolha um pokemon</h1>
+      <div className='DisplaySection'> { !pokemonChosen ? ( <img className='quem' src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWUzajJ3YmdwODZ5a2hmM3plcTMyaGlobm1hMWQ5eDkxZjJtN21ydCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DRfu7BT8ZK1uo/giphy.gif' />
       ) : (
         <div>
         
