@@ -1,0 +1,60 @@
+.App {
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  flex-direction: column;
+}
+body{
+  margin: 0%;
+  padding: 0%;
+}
+
+
+.TitleSection {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: brown;
+}
+
+.TitleSection input {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid blue;
+  font-size: 18px;
+  padding-left: 16px;
+}
+
+.TitleSection button{
+  width: 180px;
+  height: 60px;
+  margin: 2%;
+  border-radius: 10px;
+  border: 1px solid blue;
+  font-size: 18px;
+  background-color: yellow;
+}
+
+.TitleSection button:hover{
+  background-color: orange;
+  cursor: pointer;
+}
+
+.DisplaySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DisplaySection h4 {
+  margin: 5px;
+}
+
+.DisplaySection img {
+  width: 300px;
+}
